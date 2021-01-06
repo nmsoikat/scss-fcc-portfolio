@@ -1,6 +1,7 @@
 @import "config";
-@import "home";
 @import "menu";
+@import "home";
+@import "about";
 
 body {
   background-color: $primary-color;
@@ -46,6 +47,10 @@ main {
       }
     }
   }
+}
+
+.text-secondary {
+  color: $secondary-color;
 }
 
 footer {

@@ -1,0 +1,42 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-img {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.4)
+      ),
+      url(../img/model-1.jpg) center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__bio {
+    width: 80%;
+    text-align: center;
+  }
+
+  .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__job {
+      padding: 0.5rem;
+      background-color: lighten($primary-color, 10%);
+      border-bottom: 5px solid $secondary-color;
+    }
+  }
+}
